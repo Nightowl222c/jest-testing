@@ -1,4 +1,4 @@
-import fizzBuzz from './fizzBuzz';
+import fizzBuzz from '../FizzBuzz/fizzBuzz';
 
 describe('fizzBuzz function', () => {
     it('outputs the correct sequence of FizzBuzz values', () => {

@@ -1,8 +1,11 @@
-import { render, screen } from '@testing-library/react';
+import React from 'react';
+import { render } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('App', () => {
+  it('displays the average rating for the author', () => {
+    const { getByText } = render(<App />);
+    const averageRating = getByText(/The average rating for Alice is:/i);
+    expect(averageRating).toBeInTheDocument();
+  });
 });
