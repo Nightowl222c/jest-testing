@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
 }
+
+.fizzbuzz-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.fizzbuzz-list {
+  list-style: none;
+  padding: 0;
+}
+
+.fizzbuzz-list li {
+  margin: 5px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
